@@ -9,26 +9,26 @@
 </head>
 
 <body>
-  <div class="screen">
+  <div class="screen up">
     <h1>Aim Training</h1>
-    <a href="#" class="start">Start</a>
+    <a href="#" class="start" id="start">Start</a>
   </div>
 
-  <div class="screen">
+  <div class="screen up">
     <h1>Select the time</h1>
-    <ul class="time-list">
+    <ul class="time-list" id="time-list">
       <li>
-        <button class="time-btn">
+        <button class="time-btn" data-time="10">
           10 s
         </button>
       </li>
       <li>
-        <button class="time-btn">
+        <button class="time-btn" data-time="20">
           20 s
         </button>
       </li>
       <li>
-        <button class="time-btn">
+        <button class="time-btn" data-time="30">
           30 s
         </button>
       </li>
@@ -36,9 +36,10 @@
   </div>
 
   <div class="screen">
-    <h3>Осталось <span id="time">00:00</span></h3>
+    <h3><span id="time">00:00</span> left</h3>
     <div class="board" id="board"></div>
   </div>
+  <script src="app.js"></script>
 </body>
 
 </html>
