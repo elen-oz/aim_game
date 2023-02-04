@@ -63,7 +63,6 @@ function setTime(value) {
 }
 
 function finishGame() {
-  // timeEl.parentNode.remove();
   timeEl.parentNode.classList.add('hide');
   board.innerHTML = `<h1>Your score: <span class="primary">${score}</span></h1>`;
 }
@@ -89,10 +88,6 @@ function createRandomCircle() {
 function getRandomNumber(min, max) {
   return Math.round(Math.random() * (max - min) + min);
 }
-
-// function setColor(element) {
-//   element.style.backgroundColor = color;
-// }
 
 function getRundomColor() {
   const index = getRandomNumber(0, colors.length - 1);
