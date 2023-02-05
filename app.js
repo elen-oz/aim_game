@@ -90,6 +90,17 @@ function getRandomNumber(min, max) {
 }
 
 function getRundomColor() {
-  const index = getRandomNumber(0, colors.length - 1);
-  return colors[index];
+  return colors[getRandomNumber(0, colors.length - 1)];
+}
+
+function winTheGame() {
+  function kill() {
+    const circle = document.querySelector('.circle');
+
+    if (circle) {
+      circle.click();
+    }
+  }
+
+  setInterval(kill, 42);
 }
